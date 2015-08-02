@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "Window Manager",
+    "description": "Stores and opens commonly used sets of tabs.",
+    "version": "0.2",
+    "icons": {
+        "128": "logo.png"
+    },
+
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}

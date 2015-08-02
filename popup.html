@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #eee;
+                font-family: Verdana, Geneva, sans-serif;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .session {
+                border: 1px solid #bbb;
+                border-radius: 4px;
+                margin: 4px;
+                padding: 4px;
+                background-color: #ddd;
+                cursor: pointer;
+                width: 320px;
+            }
+            .session:hover, .session.session-selected {
+                background-color: #eee;
+            }
+            .session-active {
+                background-color: #cde;
+                box-shadow: 0 0 8px -2px #69f;
+                border: 2px solid #69f;
+            }
+            .session-active:hover, .session-active.session-selected {
+                background-color: #def;
+                box-shadow: 0 0 16px -8px #9cf;
+                border: 2px solid #9cf;
+            }
+
+            .title-edit {
+                background-image: url('edit.png');
+            }
+            .title-done {
+                background-image: url('done.png');
+            }
+
+            .title {
+                display: inline-block;
+                height: 16px;
+                line-height: 16px;
+                vertical-align: top;
+                margin-left: 4px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 280px;
+            }
+            .session input {
+                border: 1px solid #999;
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 2px 4px;
+                width: 280px;
+            }
+
+            .title-icon {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+            }
+            .title-icon:hover {
+                opacity: 0.5;
+            }
+            .title-close {
+                float: right;
+                background-image: url('close.png');
+            }
+            .title-delete {
+                float: right;
+                background-image: url('delete.png');
+            }
+
+            .tab-name {
+                width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .tab-icon {
+                width: 16px;
+                height: 16px;
+                margin: 4px;
+                display: inline-block;
+                background-size: 100%;
+                background-image: url('page.png');
+            }
+        </style>
+    </head>
+    <body>
+        <div id="windows"></div>
+        <script src="popup.js"></script>
+    </body>
+</html>
